@@ -11,8 +11,11 @@ int n1;
 for (n1 = 0; n1 <= 9; n1++)
 {
 putchar(n1 + '0');
+if (n1 != 9)
+{
 putchar(',');
 putchar(' ');
+}
 }
 putchar('\n');
 return (0);
