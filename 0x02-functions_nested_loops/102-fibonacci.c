@@ -7,25 +7,25 @@
  */
 int main(void)
 {
-int count, one, two, next;
+long int count, one, two, next;
 
 count = 3;
 one = 1;
 two = 2;
 
-printf("%d, ", one);
-printf("%d, ", two);
+printf("%lu, ", one);
+printf("%lu, ", two);
 next = one + two;
 
 while (count <= 50)
 {
 if (count == 50)
 {
-printf("%d, \n", next);
+printf("%lu, \n", next);
 }
 else
 {
-printf("%d, ", next);
+printf("%lu, ", next);
 }
 
 one = two;
