@@ -15,17 +15,13 @@ for (i = 0; s1[i] != '\0'; i++)
 {
 for (j = 0; s2[j] != '\0'; j++)
 {
-if (s1[i] == s2[j])
+if (s1[i] != s2[j])
+{
+return (s1[i] - s2[j]);
+}
+else
 {
 return (0);
-}
-else if (s1[i] < s2[j])
-{
-return (-15);
-}
-else if (s1[i] > s2[j])
-{
-return (15);
 }
 }
 }
