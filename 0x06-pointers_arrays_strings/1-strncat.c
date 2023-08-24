@@ -8,7 +8,7 @@
  *@dest: pointer to a char.
  *@src: pointer to a char.
  *@n: integer.
- * Return: no return (Success)
+ * Return: returns a pointer to a char (Success)
  */
 char *_strncat(char *dest, char *src, int n)
 {

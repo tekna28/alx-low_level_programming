@@ -5,7 +5,7 @@
  *
  *@dest: pointer to a char.
  *@src: pointer to a char.
- * Return: no return (Success)
+ * Return: returns a pointer to a char (Success)
  */
 char *_strcat(char *dest, char *src)
 {
