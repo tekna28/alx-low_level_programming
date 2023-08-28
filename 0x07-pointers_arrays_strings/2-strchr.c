@@ -10,11 +10,18 @@
 char *_strchr(char *s, char c)
 {
 char *p;
+int i = 0;
 
-for (p = s; *p != '\0'; p++)
+p = s;
+while (*s != c)
 {
-if (*p == c)
-return (p);
+s++;
+i++;
+}
+
+if (*s == c)
+{
+return (p + i);
 }
 return (0);
 }
