@@ -15,13 +15,16 @@ int i = 0;
 p = s;
 while (*s != c)
 {
-s++;
-i++;
+++s;
+++i;
 }
 
 if (*s == c)
 {
 return (p + i);
 }
+else
+{
 return (0);
+}
 }
