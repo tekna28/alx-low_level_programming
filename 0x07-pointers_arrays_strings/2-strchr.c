@@ -19,5 +19,10 @@ return (s);
 }
 s++;
 }
+/*if ch = '\0'*/
+if (*s == c)
+{
+return (s);
+}
 return (NULL);
 }
