@@ -61,7 +61,8 @@ file_to = argv[2];
 fd_from = open(file_from, O_RDONLY);
 if (fd_from == -1)
 exit(std_errs(98, file_from));
-fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC,
+S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 if (fd_to == -1)
 exit(close(fd_from) == -1 ? std_errs(fd_from, NULL) : std_errs(99, file_to));
 val = read(fd_from, &buffer, bufflen);
